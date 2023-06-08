@@ -1,4 +1,5 @@
 from bot_init import *
+from secret_config import TOKEN
 
 import mahitka_commands.help_group
 import mahitka_commands.events
@@ -17,4 +18,4 @@ async def on_ready():
     await bot.tree.sync()
 
     
-bot.run("")
+bot.run(TOKEN)
